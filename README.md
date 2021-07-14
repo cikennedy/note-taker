@@ -25,6 +25,8 @@
 
   [GitHub Repository](https://github.com/cikennedy/note-taker)
 
+  ![Screenshot](./Assets/Screenshot.png)
+
   ## License
 
   This project is licensed using the MIT license.
