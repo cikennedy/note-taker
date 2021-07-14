@@ -37,7 +37,7 @@ router.post('/notes', (req, res) => {
 // delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` 
 // property, and then rewrite the notes to the `db.json` file.
 router.delete('/notes/:id', (req, res) => {
-    const noteId = req.params.id;
+    const noteId = req.params.id.toString();
     const noteData = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
     const readData = noteData.filter(note => note.id.toString() !== noteId);
     // rewrite the readData to db.json file 
