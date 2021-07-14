@@ -5,13 +5,7 @@
 
   This application will allow users to write and save notes using an Express.js back end. Users will save and retrieve note data from a JSON file.
 
-  [Heroku Deployment](https://voyage-mandarine-35766.herokuapp.com/)
-
-  [GitHub Repository](https://github.com/cikennedy/note-taker)
-
   ## Table of Contents
-
-  * [Installation](#installation)
 
   * [Usage](#usage)
   
@@ -21,13 +15,15 @@
 
   * [Questions](#questions)
 
-  ## Installation
-
-  For this project to run properly, install the necessary dependencies by using the following terminal command: npm i
-
   ## Usage
 
-  N/A
+  The application can be used via the browser at the below deployed link: 
+
+  [Heroku Deployment](https://voyage-mandarine-35766.herokuapp.com/)
+
+  The application's GitHub repository can be found below:
+
+  [GitHub Repository](https://github.com/cikennedy/note-taker)
 
   ## License
 
