@@ -39,7 +39,7 @@ router.post('/notes', (req, res) => {
 router.delete('/notes/:id', (req, res) => {
     const noteId = req.params.id.toString();
     const noteData = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
-    const readData = noteData.filter(note => note.id.toString() !== noteId);
+    const readData = noteData.filter( note => note.id.toString() !== noteId );
     // rewrite the readData to db.json file 
     fs.writeFileSync("./db/db.json", JSON.stringify(readData));
     res.json(readData)

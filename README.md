@@ -25,7 +25,11 @@
 
   [GitHub Repository](https://github.com/cikennedy/note-taker)
 
-  ![Screenshot](./Assets/Screenshot.png)
+  ![Test Post](./assets/post.png)
+
+  ![Successful Test Post](./assets/post-success.png)
+
+  ![Successful Test Post - API Route](./assets/api-notes-success.png)
 
   ## License
 
