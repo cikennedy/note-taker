@@ -17,11 +17,20 @@ router.get('/notes', (req, res) => {
 
 // * `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and 
 // then return the new note to the client. 
-// You'll need to find a way to give each note a unique id when it's saved 
-// (look into `npm` packages that could do this for you).
-
 router.post('/notes', (req, res) => {
-
+    const note = req.body;
+    // Use the uuid package to assign an id to the note 
+    note.id = uuidv4();
+    // read the `db.json` file
+    const noteData = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
+    // Write noteData to db.json file 
+    noteData.push(note);
+    fs.writeFileSync("./db/db.json", JSON.stringify(noteData));
+    res.json(noteData)
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 
