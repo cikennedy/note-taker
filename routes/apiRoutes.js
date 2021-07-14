@@ -4,9 +4,15 @@ const fs = require('fs');
 // Unique id npm package 
 const { v4: uuidv4 } = require('uuid');
 
-// * `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+// * `GET /api/notes` should return all saved notes as JSON.
 router.get('/notes', (req, res) => {
-
+    // read the `db.json` file
+    const noteData = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
+    res.json(noteData)
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 // * `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and 
