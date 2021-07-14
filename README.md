@@ -3,7 +3,11 @@
 
   ## Description
 
-  N/A
+  This application will allow users to write and save notes using an Express.js back end. Users will save and retrieve note data from a JSON file.
+
+  [Heroku Deployment](https://voyage-mandarine-35766.herokuapp.com/)
+
+  [GitHub Repository](https://github.com/cikennedy/note-taker)
 
   ## Table of Contents
 
